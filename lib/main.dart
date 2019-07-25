@@ -1,4 +1,7 @@
+
 import 'package:flutter/material.dart';
+
+import 'SkateShop.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SkatePage(),
+      home: SkateShop(),
     );
   }
 }
@@ -44,7 +47,7 @@ class DieCuttingPainter extends CustomPainter {
     var x = size.height / 6;
 
     var path = Path();
-    path.moveTo(0, -2*x);
+    path.moveTo(0, -2 * x);
 
     for (var i = 0; i < 5; i++) {
       path.relativeLineTo(x, x);
@@ -87,22 +90,30 @@ class SkatePage extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         MaterialButton(
-          onPressed: () {
-
-          },
-          child: Icon(Icons.arrow_back,
+          onPressed: () {},
+          child: Icon(
+            Icons.arrow_back,
             color: Colors.white,
             size: 32.0,
           ),
         ),
-        SizedBox(width: 48,),
+        SizedBox(
+          width: 48,
+        ),
         Flexible(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              SizedBox(height: 8,),
-              Text("SLIME MONSTER",
-                style: Theme.of(context).textTheme.title.copyWith(
+              SizedBox(
+                height: 8,
+              ),
+              Text(
+                "SLIME MONSTER",
+                style: Theme
+                    .of(context)
+                    .textTheme
+                    .title
+                    .copyWith(
                   fontWeight: FontWeight.bold,
                   fontSize: 26,
                   letterSpacing: 14,
@@ -142,9 +153,13 @@ class SkatePage extends StatelessWidget {
                         padding: const EdgeInsets.only(right: 32.0),
                         child: Text(
                           "Handmade skateboard desk with original painting from Mexico",
-                          style: Theme.of(context).textTheme.title.copyWith(
-                                fontSize: 22.0,
-                              ),
+                          style: Theme
+                              .of(context)
+                              .textTheme
+                              .title
+                              .copyWith(
+                            fontSize: 22.0,
+                          ),
                         ),
                       ),
                       Expanded(
@@ -156,32 +171,48 @@ class SkatePage extends StatelessWidget {
                       ),
                       Text(
                         "S I Z E",
-                        style: Theme.of(context).textTheme.caption.copyWith(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey,
-                            ),
+                        style: Theme
+                            .of(context)
+                            .textTheme
+                            .caption
+                            .copyWith(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                        ),
                       ),
                       Text(
                         "8\" x 32\"",
-                        style: Theme.of(context).textTheme.title.copyWith(
-                              fontSize: 22.0,
-                            ),
+                        style: Theme
+                            .of(context)
+                            .textTheme
+                            .title
+                            .copyWith(
+                          fontSize: 22.0,
+                        ),
                       ),
                       Expanded(
                         child: Container(),
                       ),
                       Text("M A T E R I A L",
-                          style: Theme.of(context).textTheme.caption.copyWith(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.grey,
-                              )),
+                          style: Theme
+                              .of(context)
+                              .textTheme
+                              .caption
+                              .copyWith(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey,
+                          )),
                       Text(
                         "Canadian Maple",
-                        style: Theme.of(context).textTheme.title.copyWith(
-                              fontSize: 22.0,
-                            ),
+                        style: Theme
+                            .of(context)
+                            .textTheme
+                            .title
+                            .copyWith(
+                          fontSize: 22.0,
+                        ),
                       ),
                       Expanded(
                         flex: 3,
@@ -199,10 +230,14 @@ class SkatePage extends StatelessWidget {
                             child: Text(
                               "\$240",
                               style:
-                                  Theme.of(context).textTheme.headline.copyWith(
-                                        fontWeight: FontWeight.bold,
-                                        letterSpacing: 10,
-                                      ),
+                              Theme
+                                  .of(context)
+                                  .textTheme
+                                  .headline
+                                  .copyWith(
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 10,
+                              ),
                             ),
                           ),
                         ),
